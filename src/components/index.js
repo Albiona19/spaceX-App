@@ -1,3 +1,4 @@
-import Header from "./Header"
+import  Header  from "./Header"
+import LoadingState from "./LoadingState"
 
-export default Header
+export {Header, LoadingState}
