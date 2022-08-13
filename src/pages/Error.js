@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom';
 export default function Error(){
     return(
         <>
-            <section>
+            <section className='error-page'>
                 <h1>Error | The requested resource could not be found</h1>
-                <Link to = "/" classNme="btn">&larr; Back To Homepgae</Link>
+                <Link to = "/" className="btn">
+                    &larr; Back To Homepage
+                </Link>
    
             </section>
         

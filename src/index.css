@@ -7,9 +7,85 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.error-page{
+  display: flex;
+  flex-direction: column;
+  height: screen;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 8rem;
+}
+.btn{
+  text-decoration: none;
+  padding: 2px 8px;
+  border:2px solid white;
+  background: transparent;
+  color: white;
+  
+  
+}
+img{
+  max-width: 100%;
+  width: 100%;
+}
+.heading{
+  color: white;
+  font-family: bold;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+p{
+  line-height: 1.8;
+  text-align: center;
+  
+
+}
+.showcase{
+  background: url("/src/bg.webp");
+  height: calc(100vh - 0.1px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+.btn:hover{
+  opacity: 75;
+  transition: 0.5 all ease ;
+}
+li{
+  list-style-type: none;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  position: absolute;
+  width: 92%;
+}
+.sispace{
+  font-size: 4.25rem;
+  color: white;
+}
+.showcase .overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: calc(100vh - 0.1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.capsules{
+  text-decoration: none;
+  color: white;
+
 }
