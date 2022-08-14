@@ -1,6 +1,6 @@
 import { useState } from "react"
 import useFetch from "../hooks/useFetch"
-import { Loading } from "../components"
+import {  LoadingState } from "../components"
 import { format } from "date-fns"
 
 export default function Roadster() {
@@ -10,7 +10,7 @@ export default function Roadster() {
   return (
     <>
       {!data ? (
-        <Loading />
+        <LoadingState />
       ) : (
         <section className="py-32 max-width">
           <h1 className="heading text-center mb-10">
