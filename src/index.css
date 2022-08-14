@@ -94,3 +94,9 @@ p{
   color: white;
   margin-top: 8rem;
 }
+.article{
+  @apply bg-stone-900 p-5 rounded-lg shadow shadow-zinc-800 text-white text-sm;
+}
+.max-width{
+  @apply max-w-6xl mx-auto;
+}

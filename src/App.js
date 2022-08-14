@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  {Header}   from "./components"
 import {LoadingState} from "./components";
-import {Homepage, Error} from "./pages"
+import {Homepage, Error, Capsules} from "./pages"
+
+
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
    <LoadingState />
    <Routes>
       <Route path="/" element = {<Homepage />}></Route>
+      <Route path = '/capsules' element = {<Capsules/>}></Route>
       <Route path="*" element = {<Error />}></Route>
    </Routes>
    </BrowserRouter>
