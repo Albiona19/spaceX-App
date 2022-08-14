@@ -44,7 +44,7 @@ export default function SingleDragons() {
             </ul> */}
         
         <p>{singleDragon.description}</p> 
-</div> */}
+</div> 
         <div>
             {/* Metric Units */}
               {/* <ul>
