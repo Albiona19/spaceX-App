@@ -1,5 +1,5 @@
 import useFetch from "../hooks/useFetch"
-import { Loading } from "../components"
+import {  LoadingState } from "../components"
 import { Link } from "react-router-dom"
 
 export default function Rockets() {
@@ -8,7 +8,7 @@ export default function Rockets() {
   return (
     <>
       {!data ? (
-        <Loading />
+        <LoadingState />
       ) : (
         <section className="py-32 max-width">
           <h1 className="heading text-center mb-10">Rockets</h1>
