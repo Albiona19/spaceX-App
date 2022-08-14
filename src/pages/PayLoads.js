@@ -1,5 +1,5 @@
 import useFetch from "../hooks/useFetch"
-import { Loading } from "../components"
+import { LoadingState } from "../components"
 
 export default function Payloads() {
   const [data] = useFetch("https://api.spacexdata.com/v4/payloads")
@@ -7,7 +7,7 @@ export default function Payloads() {
   return (
     <>
       {!data ? (
-        <Loading />
+        <LoadingState />
       ) : (
         <section className="py-32 max-width">
           <h1 className="heading text-center mb-10">Payloads</h1>
