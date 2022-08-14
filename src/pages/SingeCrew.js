@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import {Link, useParams} from 'react-router-dom'
+import { LoadingState } from '../components'
 
 export default function SingeCrew() {
     const [singleCrew, setSingleCrew] = useState([])
@@ -17,7 +18,8 @@ export default function SingeCrew() {
     },[id])
 
   return (
-    <section className='py-32'>
+   <>
+   {!singleCrew ? <LoadingState/> :  <section className='py-32'>
         <div className='max-width grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 px-5'>
         <article>
         <img src={singleCrew.image} alt={singleCrew.name}/>
@@ -45,6 +47,7 @@ export default function SingeCrew() {
         </div>
         
 
-    </section>
+    </section>}
+   </>
   )
 }
