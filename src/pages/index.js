@@ -6,10 +6,12 @@ import Crew from "./Crew"
 import SingeCrew from "./SingeCrew"
 import Dragons from "./Dragons"
 import SingleDragons from "./SingleDragons"
+import Landpads from "./Landpads"
+import SingleLandsPads from "./SingleLandsPads"
 
 
 
 
 
 
-export { Error, Homepage, Capsules, Cores, Crew, SingeCrew, Dragons, SingleDragons }
+export { Error, Homepage, Capsules, Cores, Crew, SingeCrew, Dragons, SingleDragons, Landpads,SingleLandsPads  }
