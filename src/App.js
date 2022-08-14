@@ -19,8 +19,8 @@ function App() {
       <Route path = '/crew/:id' element = {<SingeCrew />}></Route>
       <Route path = '/dragons' element = {<Dragons />}></Route>
       <Route path = '/dragons/:id' element = {<SingleDragons />}></Route>
-      <Route path = '/landpads' element = {<Landpads />}></Route>
-      <Route path = '/singlelandspads/:id' element = {<SingleLandsPads />}></Route>
+      <Route path="/landpads" element={<Landpads />}></Route>
+        <Route path="/landpads/:id" element={<SingleLandsPads />}></Route>
 
 
       <Route path="*" element = {<Error />}></Route>
