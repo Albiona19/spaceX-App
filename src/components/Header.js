@@ -34,6 +34,11 @@ export default function Header() {
                             Dragons
                         </Link>
                     </li> 
+                    <li> 
+                        <Link to="/landpads" className="text-white text-sm lg:text-base">
+                            LandPads
+                        </Link>
+                    </li> 
                     {/* <li>
                         <Link></Link>
                     </li>
