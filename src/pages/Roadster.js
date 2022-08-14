@@ -1,6 +1,6 @@
 import { useState } from "react"
 import useFetch from "../hooks/useFetch"
-import {  LoadingState } from "../components"
+import { LoadingState } from "../components"
 import { format } from "date-fns"
 
 export default function Roadster() {

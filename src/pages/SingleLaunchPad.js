@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
-import {  LoadingState } from "../components"
+import { LoadingState } from "../components"
 
 export default function SingleLaunchPad() {
   const [singleLaunchpad, setSingleLaunchPad] = useState(null)

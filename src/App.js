@@ -10,18 +10,13 @@ import {
   Dragons,
   SingleDragons,
   Landpads,
-  SingleLandPad,
+  SingleLandsPads,
   Launches,
   SingleLaunch,
   Launchpads,
   SingleLaunchPad,
   Payloads,
-  Roadster,
-  Rockets,
-  SingleRocket,
-  Ships,
-  SingleShip,
-  Starlink,
+  Roadster
 } from "./pages"
 
 function App() {
@@ -37,18 +32,13 @@ function App() {
         <Route path="/dragons" element={<Dragons />}></Route>
         <Route path="/dragons/:id" element={<SingleDragons />}></Route>
         <Route path="/landpads" element={<Landpads />}></Route>
-        <Route path="/landpads/:id" element={<SingleLandPad />}></Route>
+        <Route path="/landpads/:id" element={<SingleLandsPads />}></Route>
         <Route path="/launches" element={<Launches />}></Route>
         <Route path="/launches/:id" element={<SingleLaunch />}></Route>
         <Route path="/launchpads" element={<Launchpads />}></Route>
         <Route path="/launchpads/:id" element={<SingleLaunchPad />}></Route>
         <Route path="/payloads" element={<Payloads />}></Route>
         <Route path="/roadster" element={<Roadster />}></Route>
-        <Route path="/rockets" element={<Rockets />}></Route>
-        <Route path="/rockets/:id" element={<SingleRocket />}></Route>
-        <Route path="/ships" element={<Ships />}></Route>
-        <Route path="/ships/:id" element={<SingleShip />}></Route>
-        <Route path="/starlink" element={<Starlink />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
