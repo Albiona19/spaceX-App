@@ -18,7 +18,17 @@ export default function Capsules() {
 
 
         <div className='max-width grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3'>
-            {capsules.map(({ id, type, status, serial ,launches, last_update, land_landings, water_landings, reuse_count })=>(
+            {capsules.map(
+                ({ id, 
+                    type,
+                     status,
+                      serial ,
+                      launches, 
+                      last_update,
+                       land_landings,
+                        water_landings,
+                         reuse_count
+                         }) => (
                 <article key={id} className="article">
                     <h2 className="text-xl font-bold mb-5">
                         {type}, <span className='text-base opacity-75 font-light'>{serial}</span></h2>

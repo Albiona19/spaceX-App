@@ -17,10 +17,12 @@ export default function Header() {
                     <li>
                         <Link to="/capsules" className='capsules'>Capsules</Link>
                     </li>
-                    {/* <li> 
-                        <Link></Link>
-                    </li>
-                    <li>
+                     <li> 
+                        <Link to="/cores" className="text-white text-sm lg:text-base">
+                            Cores
+                        </Link>
+                    </li> 
+                    {/* <li>
                         <Link></Link>
                     </li>
                     <li>
@@ -49,7 +51,7 @@ export default function Header() {
                     </li>
                     <li>
                         <Link></Link>
-                    </li> */}
+                    </li> */} 
 
 
                 </ul>
