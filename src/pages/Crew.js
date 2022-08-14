@@ -1,5 +1,7 @@
 import {useState, useEffect} from 'react'
-import { Loading } from '../components'
+import { LoadingState } from '../components'
+import { Link } from 'react-router-dom';
+
 
 export default function Crew() {
     const [crew, setCrew] = useState ([])
@@ -12,13 +14,40 @@ export default function Crew() {
         }
         fetchCrew()
     },[])
-  return (
-    <>
-    {!crew ? <Loading/> :
+    return <>
+    {!crew ? <LoadingState/> :
     <section className='py-32'>
-    <h1></h1>
-    </section>
-  
-}
+        <h1 className='heading text-center mb-10'>
+            Crew
+        </h1>
 
-</>
+        <div className='max-width grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 px-5'>
+            {crew.map(({
+                id,
+                name,
+                image
+
+            }) => (
+               <Link key={id} to={`/crew/${id}`}>
+                <article className='relative'>
+                    <img src={image} alt={name} loading='lazy'className='h-96 w-full object-cover '/>
+                    <h2 className='absolute bottom-5 left-5 font-bold text-white text-lg tracking-wide'>{name}</h2>
+                </article>
+               </Link>
+            )
+            
+            )}
+        
+        
+        
+        </div>
+
+    </section>
+
+    
+    
+    }
+    
+    </>
+
+}
