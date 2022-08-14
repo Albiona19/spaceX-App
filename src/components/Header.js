@@ -22,6 +22,12 @@ export default function Header() {
                             Cores
                         </Link>
                     </li> 
+
+                    <li> 
+                        <Link to="/crew" className="text-white text-sm lg:text-base">
+                            Crew
+                        </Link>
+                    </li> 
                     {/* <li>
                         <Link></Link>
                     </li>
