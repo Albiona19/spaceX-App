@@ -13,7 +13,7 @@ export default function Header() {
 
             </div>
             <nav>
-                <ul>
+                <ul className='flex gap-5'>
                     <li>
                         <Link to="/capsules" className='capsules'>Capsules</Link>
                     </li>
