@@ -7,13 +7,39 @@ import SingeCrew from "./SingeCrew"
 import Dragons from "./Dragons"
 import SingleDragons from "./SingleDragons"
 import Landpads from "./Landpads"
-import SingleLandsPads from "./SingleLandsPads"
+import SingleLandPad from "./SingleLandPad"
 import Launches from "./Launches"
 import SingleLaunch from "./SingleLaunch"
+import Launchpads from "./Launchpads"
+import SingleLaunchPad from "./SingleLaunchPad"
+import Payloads from "./Payloads"
+import Roadster from "./Roadster"
+import Rockets from "./Rockets.js"
+import SingleRocket from "./SingleRocket"
+import Ships from "./Ships"
+import SingleShip from "./SingleShip"
+import Starlink from "./Starlink"
 
-
-
-
-
-
-export { Error, Homepage, Capsules, Cores, Crew, SingeCrew, Dragons, SingleDragons, Landpads,SingleLandsPads, Launches, SingleLaunch  }
+export {
+  Error,
+  Homepage,
+  Capsules,
+  Cores,
+  Crew,
+  SingeCrew,
+  Dragons,
+  SingleDragons,
+  Landpads,
+  SingleLandPad,
+  Launches,
+  SingleLaunch,
+  Launchpads,
+  SingleLaunchPad,
+  Payloads,
+  Roadster,
+  Rockets,
+  SingleRocket,
+  Ships,
+  SingleShip,
+  Starlink,
+}
