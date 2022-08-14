@@ -1,5 +1,5 @@
 import useFetch from "../hooks/useFetch"
-import { Loading } from "../components"
+import { LoadingState } from "../components"
 import { Link } from "react-router-dom"
 
 export default function Launchpads() {
@@ -8,7 +8,7 @@ export default function Launchpads() {
   return (
     <>
       {!data ? (
-        <Loading />
+        <LoadingState />
       ) : (
         <section className="py-32 max-width">
           <h1 className="heading text-center mb-10">Launchpads</h1>
