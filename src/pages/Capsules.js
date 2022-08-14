@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import {LoadingState} from '../components'
 
 export default function Capsules() {
     const [capsules, setCapsules] = useState([])
@@ -11,8 +12,9 @@ export default function Capsules() {
         fetchCapsules()
     },[])
   return (
-    <section>
-       <h1 className='heading text-center mb-5'>Capsules</h1>
+   <>
+    {!capsules ? <LoadingState/> : <section className='py-32'>
+       <h1 className='heading text-center mb-10'>Capsules</h1>
 
 
         <div className='max-width grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3'>
@@ -26,13 +28,15 @@ export default function Capsules() {
                         <li className='mb-1'>{land_landings} land landings</li>
                         <li className='mb-1'>{water_landings} water landings</li>
                         <li className='mb-1'>Reused {reuse_count} times</li >
-                       {status === "active" ? <li className='text-green-600'>Active</li> : <li  className='text-rose-500'>Retired</li>}
+                       {status === "active" ? <li className='text-green-600 '>Active</li> : <li  className='text-rose-500 '>Retired</li>}
                     </ul>
                     <p className='mt-5 opacity-75'>{last_update}</p>
 
                 </article>
             ))}
         </div>
-    </section>
+    </section>}
+   </>
+            
   )
 }

@@ -100,3 +100,25 @@ p{
 .max-width{
   @apply max-w-6xl mx-auto;
 }
+  /* .spinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+  }
+  .spinner article {
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 2px solid #10b58121;
+    border-top-color: #10b581;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+} */
