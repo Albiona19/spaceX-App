@@ -8,10 +8,12 @@ import Dragons from "./Dragons"
 import SingleDragons from "./SingleDragons"
 import Landpads from "./Landpads"
 import SingleLandsPads from "./SingleLandsPads"
+import Launches from "./Launches"
+import SingleLaunch from "./SingleLaunch"
 
 
 
 
 
 
-export { Error, Homepage, Capsules, Cores, Crew, SingeCrew, Dragons, SingleDragons, Landpads,SingleLandsPads  }
+export { Error, Homepage, Capsules, Cores, Crew, SingeCrew, Dragons, SingleDragons, Landpads,SingleLandsPads, Launches, SingleLaunch  }

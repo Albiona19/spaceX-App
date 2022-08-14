@@ -39,6 +39,9 @@ export default function Header() {
                             LandPads
                         </Link>
                     </li> 
+                    <Link to="/launches" className="text-white text-sm">
+                         Launches
+                    </Link>
                     {/* <li>
                         <Link></Link>
                     </li>
