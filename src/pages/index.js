@@ -14,6 +14,11 @@ import Launchpads from "./Launchpads"
 import SingleLaunchPad from "./SingleLaunchPad"
 import Payloads from "./Payloads"
 import Roadster from "./Roadster"
+import Rockets from "./Rockets"
+import SingleRocket from "./SingleRocket"
+import Ships from "./Ships"
+import SingleShip from "./SingleShip"
+import Starlink from "./Starlink"
 
 
 export {
@@ -32,6 +37,12 @@ export {
   Launchpads,
   SingleLaunchPad,
   Payloads,
-  Roadster
+  Roadster,
+  Rockets,
+  SingleRocket,
+  Ships,
+  SingleShip,
+  Starlink
+
 
 }

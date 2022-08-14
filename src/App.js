@@ -16,7 +16,13 @@ import {
   Launchpads,
   SingleLaunchPad,
   Payloads,
-  Roadster
+  Roadster,
+  Rockets,
+  SingleRocket,
+  Ships,
+  SingleShip,
+  Starlink
+
 } from "./pages"
 
 function App() {
@@ -39,6 +45,11 @@ function App() {
         <Route path="/launchpads/:id" element={<SingleLaunchPad />}></Route>
         <Route path="/payloads" element={<Payloads />}></Route>
         <Route path="/roadster" element={<Roadster />}></Route>
+        <Route path="/rockets" element={<Rockets />}></Route>
+        <Route path="/rockets/:id" element={<SingleRocket />}></Route>
+        <Route path="/ships" element={<Ships />}></Route>
+        <Route path="/ships/:id" element={<SingleShip />}></Route>
+        <Route path="/starlink" element={<Starlink />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>

@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         <nav className={`${isOpen ? "open" : ""}`}>
-          <ul>
+          <ul className="flex gap-4">
             <li>
               <Link to="/capsules" className="text-white text-sm">
                 Capsules
