@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  {Header}   from "./components"
 import {LoadingState} from "./components";
-import {Homepage, Error, Capsules, Cores, Crew, SingeCrew, Dragons} from "./pages"
+import {Homepage, Error, Capsules, Cores, Crew, SingeCrew, Dragons, SingleDragons} from "./pages"
 
 
 
@@ -17,7 +17,9 @@ function App() {
       <Route path = '/cores' element = {<Cores />}></Route>
       <Route path = '/crew' element = {<Crew />}></Route>
       <Route path = '/crew/:id' element = {<SingeCrew />}></Route>
-            <Route path = '/dragons' element = {<Dragons />}></Route>
+      <Route path = '/dragons/:id' element = {<SingleDragons />}></Route>
+      <Route path = '/dragons' element = {<Dragons />}></Route>
+
       <Route path="*" element = {<Error />}></Route>
    </Routes>
    </BrowserRouter>

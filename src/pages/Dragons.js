@@ -26,12 +26,15 @@ export default function Dragons() {
                 flickr_images,
                 description
             }) => (
-                <Link to="" key={id}>
+                <Link to={`/dragons/${id}`} >
                     <article>
                         <img src={flickr_images[0]} alt={name} className="h-96 object-cover"/>
-                        <h2>{name}</h2>
-                        <p>{description}</p>
-                        <Link to="" className="btn">Read More &rarr;</Link>
+                        <div className='bg-zinc-900 p-5'>
+                        <h2 className='text-white text-lg pt-5 mb-3 font-bold tracking-wide'>{name}</h2>
+                        <p className='bg-transparent text-white opacity-75 text-sm mb-8'>{`${description.substring(0,200)}...`}</p>
+                        <Link to={`/dragons/${id}`} className="btn">Read More &rarr;</Link>
+
+                        </div>
                     </article>
                 </Link>
             )

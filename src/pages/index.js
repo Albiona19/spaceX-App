@@ -5,9 +5,11 @@ import Cores from "./Cores"
 import Crew from "./Crew"
 import SingeCrew from "./SingeCrew"
 import Dragons from "./Dragons"
+import SingleDragons from "./SingleDragons"
 
 
 
 
 
-export { Error, Homepage, Capsules, Cores, Crew, SingeCrew, Dragons }
+
+export { Error, Homepage, Capsules, Cores, Crew, SingeCrew, Dragons, SingleDragons }
