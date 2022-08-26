@@ -25,6 +25,8 @@ code {
   text-align: center;
   align-items: center;
   padding: 8rem;
+  gap: 2rem;
+  color: aqua;
 }
 .btn{
   text-decoration: none;

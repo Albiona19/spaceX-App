@@ -10,8 +10,11 @@ export default function Dragons() {
             const res = await fetch("https://api.spacexdata.com/v4/dragons")
             const data = await res.json()
             setDragons(data)
+            console.log(data)
+
         }
         fetchDragons()
+
     },[])
   return (
     <>
