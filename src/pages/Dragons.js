@@ -31,7 +31,7 @@ export default function Dragons() {
                         <div className='bg-zinc-900 p-5'>
                         <h2 className='text-white text-lg pt-5 mb-3 font-bold tracking-wide'>{name}</h2>
                         <p className='bg-transparent text-white opacity-75 text-sm mb-8'>{`${description.substring(0,200)}...`}</p>
-                        <Link to={`/dragons/${id}`} className="btn">Read More &rarr;</Link>
+                        {/* <Link to={`/dragons/${id}`} className="btn">Read More &rarr;</Link> */}
 
                         </div>
                     </article>

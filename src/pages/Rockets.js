@@ -31,9 +31,9 @@ export default function Rockets() {
                       0,
                       100
                     )}...`}</p>
-                    <Link to={`/rockets/${id}`} className="btn">
+                    {/* <Link to={`/rockets/${id}`} className="btn">
                       Read More &rarr;
-                    </Link>
+                    </Link> */}
                   </div>
                 </article>
               </Link>

@@ -34,9 +34,9 @@ export default function Landpads() {
                         0,
                         200
                       )}...`}</p>
-                      <Link to={`/landpads/${id}`} className="btn">
+                      {/* <Link to={`/landpads/${id}`} className="btn">
                         Read More &rarr;
-                      </Link>
+                      </Link> */}
                     </div>
                   </article>
                 </Link>

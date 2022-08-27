@@ -32,9 +32,9 @@ export default function Ships() {
                       {name}
                     </h2>
                     <p className="text-white opacity-75 mb-10">{home_port}</p>
-                    <Link to={`/ships/${id}`} className="btn">
+                    {/* <Link to={`/ships/${id}`} className="btn">
                       Read More &rarr;
-                    </Link>
+                    </Link> */}
                   </div>
                 </article>
               </Link>
