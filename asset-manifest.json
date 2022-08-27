@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/spaceX-App/static/css/main.33e0a576.css",
+    "main.js": "/spaceX-App/static/js/main.18d0822d.js",
+    "static/media/bg.webp": "/spaceX-App/static/media/bg.74b8a93f197b0ec15855.webp",
+    "index.html": "/spaceX-App/index.html",
+    "main.33e0a576.css.map": "/spaceX-App/static/css/main.33e0a576.css.map",
+    "main.18d0822d.js.map": "/spaceX-App/static/js/main.18d0822d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33e0a576.css",
+    "static/js/main.18d0822d.js"
+  ]
+}
