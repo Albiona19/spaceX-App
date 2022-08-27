@@ -35,7 +35,7 @@ function App() {
         <Route path="/cores" element={<Cores />}></Route>
         <Route path="/crew" element={<Crew />}></Route>
         <Route path="/crew/:id" element={<SingeCrew />}></Route>
-        <Route path="/dragons" element={<Dragons />}></Route>
+        <Route path="/dragons" element={<Dragons/>}></Route>
         <Route path="/dragons/:id" element={<SingleDragons />}></Route>
         <Route path="/landpads" element={<Landpads />}></Route>
         <Route path="/landpads/:id" element={<SingleLandsPads />}></Route>

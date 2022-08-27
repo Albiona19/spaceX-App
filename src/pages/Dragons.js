@@ -23,13 +23,9 @@ export default function Dragons() {
             Dragons
         </h1>
         <div className='max-width grid grid-cols-1 gap-5 md:grid-cols-2 px-5'>
-            {dragons.map(({
-                id,
-                name,
-                flickr_images,
-                description
-            }) => (
-                <Link to={`/dragons/${id}`} >
+            {dragons.map(({id, name, flickr_images, description
+            })=>(
+                <Link to={`/dragons/${id}`} key={id} >
                     <article>
                         <img src={flickr_images[0]} alt={name} className="h-96 object-cover"/>
                         <div className='bg-zinc-900 p-5'>
