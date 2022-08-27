@@ -19,7 +19,7 @@ export default function Homepage() {
         {!company ? <LoadingState /> : <section className="showcase">
         <div className='overlay'>
             <article className="container">
-                <h1 className='heading'>
+                <h1 className='heading text-center capitalize'>
                     All the SpaceX Data in one place
                 </h1>
                 <div className="grid grid-cols-2 gap-5 md:grid-cols-4 lg:grid-cols-3 max-w-3xl mx-auto lg:gap-20 px-5">
