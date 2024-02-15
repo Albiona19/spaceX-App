@@ -1,7 +1,7 @@
 import useFetch from "../hooks/useFetch"
 import { LoadingState } from "../components"
 import { Link } from "react-router-dom"
-
+// launchpads
 export default function Launchpads() {
   const [data] = useFetch("https://api.spacexdata.com/v4/launchpads")
 
